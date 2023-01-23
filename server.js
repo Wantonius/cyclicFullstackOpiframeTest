@@ -4,11 +4,6 @@ let app = express();
 
 app.use(express.json());
 
-app.use((req,res,next) => {
-	console.log("Hi, I am a filter!");
-	return next();
-})
-
 //DATABASE
 
 let database = [];
